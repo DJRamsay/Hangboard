@@ -1,0 +1,67 @@
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 3; ]
+class DataManager{
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 4; ]
+    static
+    function getSetCount() {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_4_34_6_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc" 5 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "setCount";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_4_34_6_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 8; ]
+    static
+    function setSetCount(count) {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_8_39_10_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc" 9 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "setCount";
+        %tmp.6 = lgetv %count;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_8_39_10_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 12; ]
+    static
+    function getSetDuration() {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_12_37_14_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc" 13 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "setDuration";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        ret %tmp.5;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_12_37_14_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 16; ]
+    static
+    function setSetDuration(duration) {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_16_45_18_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc" 17 8 ]
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "setDuration";
+        %tmp.6 = lgetv %duration;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_managers_DataManager_mc_16_45_18_4_stop:
+    }
+}
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\managers\DataManager.mc"; @line = 1; ]
+<init> {
+}

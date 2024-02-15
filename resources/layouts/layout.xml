@@ -1,0 +1,26 @@
+<layout id="MainLayout">
+    <label
+        id = "type_title"
+        text = "Hang"
+        x = "center"
+        y = "20%"
+        font = "Gfx.FONT_MEDIUM"
+        justification = "Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id = "current_timer"
+        text = "0:10"
+        x = "center"
+        y = "center"
+        font = "Gfx.FONT_NUMBER_THAI_HOT"
+        justification = "Gfx.TEXT_JUSTIFY_CENTER"
+    />
+    <label
+        id = "sets_left"
+        text = "5 sets left"
+        x = "center"
+        y = "70%"
+        font = "Gfx.FONT_SMALL"
+        justification = "Gfx.TEXT_JUSTIFY_CENTER"
+    />
+</layout>

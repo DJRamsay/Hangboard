@@ -1,0 +1,87 @@
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 5; ]
+class FingerBoardApp extends Application.AppBase{
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 6; @position = 16; ]
+    private
+    var _view;
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 7; ]
+    function initialize() as Void {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_7_26_9_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_20_68_23_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 21 8 ]
+        %tmp.4 = getv ? :FingerBoardView;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :_view %tmp.1;
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 22 8 ]
+        %tmp.5 = newa 2;
+        %tmp.7 = getv ? :_view;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        %tmp.13 = getv ? :FingerBoardDelegate;
+        %tmp.10 = newc %tmp.13 ();
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 1 %tmp.10;
+        ret %tmp.15;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_20_68_23_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 26; ]
+    function getView() as FingerBoardView {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_26_41_28_4_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 27 8 ]
+        %tmp.2 = getv ? :_view;
+        ret %tmp.2;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_26_41_28_4_stop:
+    }
+}
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 31; ]
+function getApp() as FingerBoardApp {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_31_36_33_0_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 32 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 FingerBoardApp;
+    ret %tmp.4;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_31_36_33_0_stop:
+}
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 36; ]
+function getView() as FingerBoardView {
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_36_38_38_0_start:
+[ "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc" 37 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = getv function %tmp.3 :getView;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    ret %tmp.5;
+C_Users_User_Documents_VSProjects_Garmin_FingerBoard_source_FingerBoardApp_mc_36_38_38_0_stop:
+}
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\FingerBoardApp.mc"; @line = 1; ]
+<init> {
+}

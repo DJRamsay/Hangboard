@@ -1,0 +1,21 @@
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 1; ]
+class ModeType{
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 3; @position = 8; ]
+        Hang,
+        [ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 4; @position = 8; ]
+        Rest
+    }
+}
+[ @file = "C:\Users\User\Documents\VSProjects\Garmin\FingerBoard\source\enums\ModeType.mc"; @line = 1; ]
+<init> {
+}
